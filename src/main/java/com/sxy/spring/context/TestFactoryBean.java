@@ -1,5 +1,6 @@
 package com.sxy.spring.context;
 
+import com.sxy.spring.bean.ExternalBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.FactoryBean;
