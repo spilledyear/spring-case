@@ -1,5 +1,6 @@
-package com.sxy.spring.register;
+package com.sxy.spring.register.context;
 
+import com.sxy.spring.register.ExternalBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
@@ -16,13 +17,12 @@ import org.springframework.stereotype.Component;
  * ......
  */
 
-@Component
 public class TestBeanPostProcessor implements BeanPostProcessor {
     Logger logger = LoggerFactory.getLogger(TestBeanPostProcessor.class);
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if (beanName.equals("com.sxy.spring.register.ExternalBean")) {
+        if (beanName.contains("externalBean") || beanName.contains("ExternalBean")){
             logger.warn("Bean初始化之前调用 postProcessBeforeInitialization 方法");
         }
         return null;
@@ -30,7 +30,7 @@ public class TestBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (beanName.equals("com.sxy.spring.register.ExternalBean")) {
+        if (beanName.contains("externalBean") || beanName.contains("ExternalBean")){
             logger.warn("Bean初始化之后调用 postProcessAfterInitialization 方法");
         }
         return null;

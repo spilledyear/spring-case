@@ -1,5 +1,6 @@
-package com.sxy.spring.regist;
+package com.sxy.spring.register;
 
+import com.sxy.spring.register.imports.TestImportBeanDefinitionRegistrar;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

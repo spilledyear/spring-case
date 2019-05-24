@@ -1,10 +1,10 @@
 package com.sxy.spring;
 
-import com.sxy.spring.bean.ExternalBean;
-import com.sxy.spring.config.TestBeanConfiguration;
-import com.sxy.spring.config.TestImportBeanDefinitionRegistrarCongiguration;
-import com.sxy.spring.config.TestImportConfiguration;
-import com.sxy.spring.config.TestImportSelectConfiguration;
+import com.sxy.spring.register.ExternalBean;
+import com.sxy.spring.register.TestBeanConfiguration;
+import com.sxy.spring.register.TestImportBeanDefinitionRegistrarCongiguration;
+import com.sxy.spring.register.TestImportConfiguration;
+import com.sxy.spring.register.TestImportSelectConfiguration;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

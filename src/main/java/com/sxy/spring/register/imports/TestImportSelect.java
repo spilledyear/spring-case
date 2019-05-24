@@ -1,4 +1,4 @@
-package com.sxy.spring.register;
+package com.sxy.spring.register.imports;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
