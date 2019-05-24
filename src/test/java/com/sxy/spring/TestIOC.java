@@ -8,14 +8,22 @@ import com.sxy.spring.config.TestImportSelectConfiguration;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class CaseTest {
+public class TestIOC {
 
     @Test
     public void testBean() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(TestBeanConfiguration.class);
 
-        ExternalBean externalBean2 = (ExternalBean) context.getBean("externalBean2");
-        System.out.println(externalBean2);
+        ExternalBean externalBean = (ExternalBean) context.getBean("externalBean2");
+        System.out.println(externalBean);
+    }
+
+    @Test
+    public void testProfile() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(TestBeanConfiguration.class);
+
+        ExternalBean externalBean = (ExternalBean) context.getBean("externalBean10");
+        System.out.println(externalBean);
     }
 
 
