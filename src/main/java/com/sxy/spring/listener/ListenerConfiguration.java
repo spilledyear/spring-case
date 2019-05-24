@@ -4,6 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
+/**
+ * AbstractApplicationContext.refresh => finishRefresh()
+ * ApplicationEventMulticaster
+ */
 @Configuration
 public class ListenerConfiguration {
 
