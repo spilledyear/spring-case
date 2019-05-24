@@ -1,4 +1,4 @@
-package com.sxy.spring.context;
+package com.sxy.spring.register;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ public class TestBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if (beanName.equals("com.sxy.spring.bean.ExternalBean")) {
+        if (beanName.equals("com.sxy.spring.register.ExternalBean")) {
             logger.warn("Bean初始化之前调用 postProcessBeforeInitialization 方法");
         }
         return null;
@@ -30,7 +30,7 @@ public class TestBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (beanName.equals("com.sxy.spring.bean.ExternalBean")) {
+        if (beanName.equals("com.sxy.spring.register.ExternalBean")) {
             logger.warn("Bean初始化之后调用 postProcessAfterInitialization 方法");
         }
         return null;

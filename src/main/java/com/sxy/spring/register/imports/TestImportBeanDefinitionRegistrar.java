@@ -1,6 +1,5 @@
-package com.sxy.spring.context;
+package com.sxy.spring.register;
 
-import com.sxy.spring.bean.ExternalBean;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

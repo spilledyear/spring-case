@@ -1,15 +1,16 @@
-package com.sxy.spring.config;
+package com.sxy.spring.regist;
 
-import com.sxy.spring.bean.ExternalBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 @Configuration
-@ComponentScan("com.sxy.spring")
-public class TestBeanConfiguration {
+@ComponentScan("com.sxy.spring.regist")
+public class TestProfileConfiguration {
 
-    @Bean("externalBean2")
+    @Profile("default")
+    @Bean("externalBean10")
     public ExternalBean externalBean() {
         return new ExternalBean();
     }

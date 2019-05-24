@@ -1,4 +1,4 @@
-package com.sxy.spring.bean;
+package com.sxy.spring.register;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
