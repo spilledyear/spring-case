@@ -1,7 +1,5 @@
 package com.sxy.spring;
 
-import com.sxy.spring.aop.AopConfiguration;
-import com.sxy.spring.aop.LogService;
 import com.sxy.spring.listener.ListenerConfiguration;
 import com.sxy.spring.listener.StartedEvent;
 import org.junit.Test;

@@ -11,12 +11,12 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class AopConfiguration {
 
-    @Bean
+    @Bean("logService2")
     public LogService logService() {
         return new LogService();
     }
 
-    @Bean
+    @Bean("logAspect2")
     public LogAspect logAspect() {
         return new LogAspect();
     }
